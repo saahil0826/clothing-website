@@ -32,8 +32,6 @@ class App extends React.Component {
               ...snapShot.data()
             }
           });
-
-          console.log(this.state);
         });
       }
 
@@ -51,6 +49,7 @@ class App extends React.Component {
         <Header currentUser={this.state.currentUser} />
         <Switch>
           <Route exact path='/' component={HomePage} />
+            <Route exact path='/clothing-website' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
           <Route path='/signin' component={SignInAndSignUpPage} />
         </Switch>
